@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa DR</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background: linear-gradient(45deg,#FF4D88, #00A8E8, #00E689, #FFD100);
+			background-size: 400% 400%;
+            width: 100%; 
+            height: 100vh;
+			position: relative;
+			animation: cambiar 10s ease-in-out infinite;
+        }
+
+        .contenido a {
+            text-decoration: none;
+            color: black;
+            background-color: #c69b7c;
+            padding: 10px;
+            border: 1px solid black;
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .contenido a:hover{
+            background-color: #C08261;
+            color: white;
+        }
+
+        .opciones{
+            display: flex;
+            justify-content: space-around;
+        }
+        @keyframes cambiar{
+			0%{background-position: 0 50%;}
+			50%{background-position: 100% 50%;}
+			100%{background-position: 0 50%;}
+		}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Bienvenido a la tienda de ropa DR</h1>
+    </div>
+    <div class="contenido">
+        <div class="logo">
+            <img src="imgs\logoTienda.jpg" alt="">
+        </div>
+        <div class="opciones">
+            <a href="FormularioRegistro.php">Registrarse</a>
+            <a href="FormularInicioSesion.php">Iniciar Sesión</a>
+        </div>
+    </div>
+</body>
+</html>

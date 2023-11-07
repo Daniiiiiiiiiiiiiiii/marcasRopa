@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^verConjunto/([0-9]+)$ verConjunto.php?id=$1
+
+
